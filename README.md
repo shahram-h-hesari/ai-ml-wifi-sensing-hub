@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img alt="Focus" src="https://img.shields.io/badge/Focus-WiFi%20CSI%20Healthcare%20AI-154734">
-  <img alt="Security" src="https://img.shields.io/badge/Security-Adversarial%20Robustness-0B1F3A">
-  <img alt="Care Aware" src="https://img.shields.io/badge/Application-Care--Aware%20Environments-1F6F5B">
+  <img alt="Focus" src="https://img.shields.io/badge/Focus-AI%2FML%20WiFi%20Sensing-154734">
+  <img alt="First Category" src="https://img.shields.io/badge/First%20Category-Healthcare--Relevant%20Sensing-1F6F5B">
+  <img alt="Security" src="https://img.shields.io/badge/Security-Robustness%20%26%20Privacy-0B1F3A">
   <img alt="Clinical Disclaimer" src="https://img.shields.io/badge/Clinical%20Claims-Research%20Only-8A1C1C">
 </p>
 
@@ -15,28 +15,61 @@
 
 ## Overview
 
-The **Secure WiFi Healthcare AI Evidence Hub** is a curated research initiative focused on organizing scientific evidence around **WiFi CSI-based healthcare AI sensing**.
+The **AI/ML WiFi Sensing Hub** is an open research mapping initiative focused on organizing scientific evidence around **WiFi sensing systems powered by artificial intelligence and machine learning**.
 
-The project maps papers, datasets, code releases, reproducibility notes, security relevance, and open research gaps for contactless sensing systems that may support future care-aware environments such as assisted living, aging-in-place research, and non-invasive activity or vital-sign monitoring studies.
+The hub maps research papers, datasets, code releases, reproducibility notes, security relevance, and open research gaps across WiFi-based sensing applications. The first focus area is **healthcare-relevant sensing**, including contactless monitoring, activity recognition, fall detection, respiration estimation, and care-aware environments.
 
-The goal is to make the research landscape easier to understand, compare, reproduce, and extend.
+The long-term goal is to make the AI/ML WiFi sensing research landscape easier to understand, compare, reproduce, and extend.
 
 ---
 
 ## Research Motivation
 
-WiFi sensing has shown promise for contactless monitoring tasks such as activity recognition, fall detection, respiration estimation, and other healthcare-relevant sensing problems. However, many systems are evaluated mainly under normal operating conditions.
+WiFi sensing has shown promise for detecting and interpreting human activity, motion, respiration, presence, and environment-level changes without requiring wearable devices or cameras. AI/ML methods are increasingly used to classify patterns, estimate signals, and support higher-level sensing applications from WiFi channel information.
 
-For future AI-enabled sensing in care-aware environments, the field needs stronger evidence around:
+However, the field still faces important challenges:
 
-- Dataset availability and limitations
+- Dataset availability and comparability
 - Code availability and reproducibility
-- Robustness under noise, domain shift, and adversarial conditions
-- Security risks at the wireless physical layer
-- Clear mapping between sensing failures and real-world care scenarios
-- Open research gaps that require collaboration across AI/ML, wireless sensing, cybersecurity, and healthcare technology
+- Model robustness under noise, domain shift, and environmental change
+- Security risks at the wireless and physical layers
+- Privacy and spoofing concerns
+- Lack of standardized evaluation across tasks and environments
+- Limited connection between sensing failures and real-world application risks
 
 This hub is designed to organize that evidence in a structured, transparent, and collaboration-friendly way.
+
+---
+
+## Current Focus Area: Healthcare-Relevant WiFi Sensing
+
+The first category in this hub focuses on **healthcare-relevant and care-aware WiFi sensing**, including:
+
+- Fall detection
+- Activity recognition
+- Respiration monitoring
+- Vital-sign-related sensing
+- Aging-in-place research
+- Assisted-living environments
+- Non-invasive monitoring studies
+- Safety-aware sensing evaluation
+
+This project does not claim clinical validation or medical-device readiness. The focus is research evidence mapping, reproducibility, security analysis, and trustworthy AI/ML sensing methods.
+
+---
+
+## Future Expansion Areas
+
+While healthcare-relevant sensing is the first category, this hub is designed to grow into other AI/ML WiFi sensing areas, such as:
+
+| Future Category | Example Topics |
+|---|---|
+| Smart Environments | Occupancy, room-level activity, behavior patterns |
+| Human Activity Recognition | Gesture, movement, posture, daily activities |
+| Security and Privacy | Spoofing, adversarial attacks, physical-layer risks, privacy leakage |
+| Robotics and Interaction | Device-free interaction, localization, environment awareness |
+| Industrial and IoT Sensing | Presence detection, monitoring, automation, anomaly detection |
+| Reproducible WiFi Sensing | Public datasets, baselines, code releases, benchmark design |
 
 ---
 
@@ -44,10 +77,10 @@ This hub is designed to organize that evidence in a structured, transparent, and
 
 | Direction | Purpose |
 |---|---|
-| Scientific Evidence Mapping | Curate and classify papers, datasets, methods, and open gaps in WiFi CSI-based healthcare AI sensing |
+| Scientific Evidence Mapping | Curate and classify papers, datasets, methods, and open gaps in AI/ML WiFi sensing |
+| Healthcare-Relevant Sensing | Track evidence related to contactless monitoring, fall detection, respiration, and care-aware environments |
 | Trustworthy AI/ML Sensing | Track robustness, reproducibility, and model-evaluation limitations across existing work |
 | Wireless Security Analysis | Identify adversarial, physical-layer, spoofing, perturbation, and privacy-related risks |
-| Care-Aware Applications | Connect technical research to assisted living, aging-in-place, contactless monitoring, and healthcare-relevant environments |
 | Open Collaboration | Create a structured place for researchers, labs, and practitioners to suggest related work, datasets, and code |
 
 ---
@@ -56,18 +89,17 @@ This hub is designed to organize that evidence in a structured, transparent, and
 
 ```mermaid
 flowchart LR
-    A["Secure WiFi Healthcare AI Evidence Hub"] --> B["Scientific Literature"]
+    A["AI/ML WiFi Sensing Hub"] --> B["Scientific Literature"]
     A --> C["Datasets"]
     A --> D["Code & Reproducibility"]
     A --> E["Security & Robustness"]
-    A --> F["Care-Aware Applications"]
+    A --> F["Application Categories"]
     A --> G["Open Collaboration"]
 
     B --> B1["WiFi CSI Sensing"]
-    B --> B2["Healthcare AI"]
-    B --> B3["Activity Recognition"]
-    B --> B4["Vital Signs / Respiration"]
-    B --> B5["Fall Detection"]
+    B --> B2["AI/ML Methods"]
+    B --> B3["Signal Processing"]
+    B --> B4["Benchmark Papers"]
 
     C --> C1["Public Dataset Links"]
     C --> C2["Access Status"]
@@ -85,15 +117,15 @@ flowchart LR
     E --> E4["Robustness Evaluation"]
     E --> E5["Privacy and Spoofing Risks"]
 
-    F --> F1["Assisted Living"]
-    F --> F2["Aging-in-Place Research"]
-    F --> F3["Non-Invasive Monitoring"]
-    F --> F4["Safety-Aware Evaluation"]
+    F --> F1["Healthcare-Relevant Sensing"]
+    F --> F2["Smart Environments"]
+    F --> F3["Human Activity Recognition"]
+    F --> F4["Future Categories"]
 
     G --> G1["Authors"]
     G --> G2["Labs"]
     G --> G3["Dataset Owners"]
-    G --> G4["AI/ML Healthcare Researchers"]
+    G --> G4["AI/ML WiFi Sensing Researchers"]
 ```
 
 ---
@@ -103,14 +135,14 @@ flowchart LR
 ```mermaid
 flowchart TD
     A["New Paper, Dataset, or Code Repository"] --> B["Evidence Intake"]
-    B --> C{"Relevant to WiFi Healthcare AI Sensing?"}
+    B --> C{"Relevant to AI/ML WiFi Sensing?"}
 
     C -- "No" --> Z["Archived / Out of Scope"]
     C -- "Yes" --> D["Scientific Summary"]
 
     D --> E["Dataset & Code Availability Check"]
     E --> F["Security and Robustness Mapping"]
-    F --> G["Application Relevance Mapping"]
+    F --> G["Application Category Mapping"]
     G --> H["Added to Evidence Hub"]
 
     H --> I{"Potential for Collaboration?"}
@@ -124,13 +156,13 @@ flowchart TD
 
 | Category | Purpose |
 |---|---|
-| Core Research Evidence | Papers that strongly shape the technical direction of secure WiFi healthcare sensing |
-| Healthcare WiFi Sensing | Work on contactless sensing for activity, fall detection, respiration, vital signs, and related tasks |
+| Core Research Evidence | Papers that strongly shape the technical direction of AI/ML WiFi sensing |
+| Healthcare-Relevant WiFi Sensing | Work on contactless sensing for activity, fall detection, respiration, vital signs, and care-aware environments |
 | Security and Robustness Evidence | Papers on adversarial attacks, defenses, spoofing, perturbation, privacy, and physical-layer risks |
 | Dataset Evidence | Public datasets, access status, licensing, modalities, endpoints, and suitability for experiments |
 | Code and Reproducibility Evidence | Available repositories, reproducibility notes, baseline implementations, and missing-code gaps |
-| Care-Aware Application Evidence | Research connected to assisted living, aging-in-place, remote monitoring, and safety-aware sensing |
-| Collaboration Leads | Authors, labs, datasets, and groups whose work may connect to this evidence hub |
+| Future Application Categories | Research connected to smart environments, human activity recognition, IoT sensing, robotics, and other WiFi sensing areas |
+| Collaboration Leads | Authors, labs, datasets, and groups whose work may connect to this hub |
 
 ---
 
@@ -138,13 +170,15 @@ flowchart TD
 
 This project is designed for researchers and practitioners working across:
 
-- AI/ML for healthcare sensing
+- AI/ML for WiFi sensing
 - WiFi CSI and wireless sensing
+- Healthcare-relevant sensing
 - Cybersecurity and adversarial machine learning
 - Reproducible research
 - Aging technology and assisted-living research
 - Contactless monitoring systems
-- Trustworthy AI in care-aware environments
+- Smart environments and IoT sensing
+- Trustworthy AI for sensing applications
 
 ---
 
@@ -159,8 +193,9 @@ Suggestions are welcome for:
 - Missing but important related work
 - Security or robustness gaps
 - Research groups or labs working in related areas
+- New application categories for AI/ML WiFi sensing
 
-Future GitHub issue templates will provide a structured way to suggest papers, datasets, and code resources.
+Future GitHub issue templates will provide a structured way to suggest papers, datasets, code resources, and collaboration ideas.
 
 ---
 
@@ -168,10 +203,10 @@ Future GitHub issue templates will provide a structured way to suggest papers, d
 
 This project is a research evidence hub. It does **not** claim clinical validation, medical-device readiness, real patient deployment, regulatory approval, or diagnostic capability.
 
-The focus is scientific evidence mapping, reproducibility, security analysis, and trustworthy AI/ML sensing methods for healthcare-relevant and care-aware research environments.
+The focus is scientific evidence mapping, reproducibility, security analysis, and trustworthy AI/ML sensing methods for WiFi-based sensing applications.
 
 ---
 
 ## Current Status
 
-This evidence hub is under active development as a structured research resource for secure WiFi CSI-based healthcare AI sensing.
+This hub is under active development as a structured research resource for AI/ML WiFi sensing, starting with healthcare-relevant and care-aware sensing applications.
