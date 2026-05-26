@@ -1,0 +1,109 @@
+name: Suggest a Dataset
+description: Suggest a dataset for the AI/ML WiFi Sensing Hub.
+title: "[Dataset]: "
+labels: ["dataset", "evidence-intake"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a dataset for the AI/ML WiFi Sensing Hub.
+        Please provide enough information to help review dataset access, licensing, and research relevance.
+
+  - type: input
+    id: dataset-name
+    attributes:
+      label: Dataset name
+      description: Name of the dataset or benchmark.
+      placeholder: "Example: WiFi CSI activity recognition dataset"
+    validations:
+      required: true
+
+  - type: input
+    id: dataset-link
+    attributes:
+      label: Dataset link
+      description: Official dataset page, GitHub link, project page, or access request page.
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: input
+    id: related-papers
+    attributes:
+      label: Related paper(s)
+      description: Add related paper titles, DOI links, or publication links if known.
+      placeholder: "Paper title or link"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: modality
+    attributes:
+      label: Data type / modality
+      options:
+        - CSI
+        - RSSI
+        - WiFi signal data
+        - Multimodal sensing
+        - Wearable data
+        - Video / camera reference
+        - Environmental sensors
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: application-category
+    attributes:
+      label: Application category
+      options:
+        - Healthcare-relevant sensing
+        - Smart environments
+        - Human activity recognition
+        - Security and privacy
+        - Robotics / interaction
+        - Industrial / IoT sensing
+        - General / background
+        - Future category
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access-status
+    attributes:
+      label: Access status
+      options:
+        - Public
+        - Request needed
+        - Broken link
+        - Unavailable
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License or usage notes
+      description: Add license, citation, or access restrictions if known.
+      placeholder: "MIT / CC BY / academic use only / unknown"
+    validations:
+      required: false
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why is this dataset relevant?
+      description: Briefly explain why this dataset should be included.
+      placeholder: "This dataset is relevant because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      placeholder: "Optional notes..."
+    validations:
+      required: false
