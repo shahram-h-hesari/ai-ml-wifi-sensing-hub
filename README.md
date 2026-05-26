@@ -1,7 +1,7 @@
-# Secure WiFi Healthcare AI Evidence Hub
+# AI/ML WiFi Sensing Hub
 
 <p align="center">
-  <strong>An open research mapping initiative for secure, trustworthy, and reproducible WiFi CSI-based healthcare AI sensing.</strong>
+  <strong>An open research hub mapping AI/ML WiFi sensing papers, datasets, code, reproducibility, and security gaps, starting with healthcare-relevant sensing.</strong>
 </p>
 
 <p align="center">
