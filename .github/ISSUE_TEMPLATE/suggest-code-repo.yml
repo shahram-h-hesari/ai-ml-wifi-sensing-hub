@@ -1,0 +1,99 @@
+name: Suggest a Code Repository
+description: Suggest a code repository for the AI/ML WiFi Sensing Hub.
+title: "[Code]: "
+labels: ["code", "reproducibility", "evidence-intake"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a code repository.
+        This form helps track implementation resources, reproducibility, and related papers.
+
+  - type: input
+    id: repository-name
+    attributes:
+      label: Repository name
+      placeholder: "Example: WiFi CSI sensing baseline models"
+    validations:
+      required: true
+
+  - type: input
+    id: repository-url
+    attributes:
+      label: Repository URL
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+
+  - type: input
+    id: related-paper
+    attributes:
+      label: Related paper
+      description: Add a related paper title, DOI, arXiv link, or project page if known.
+      placeholder: "Paper title or link"
+    validations:
+      required: false
+
+  - type: input
+    id: language-framework
+    attributes:
+      label: Language / framework
+      placeholder: "Python, MATLAB, PyTorch, TensorFlow, etc."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: code-purpose
+    attributes:
+      label: Code purpose
+      options:
+        - CSI preprocessing
+        - Feature extraction
+        - Model training
+        - Inference
+        - Dataset loading
+        - Visualization
+        - Baseline reproduction
+        - Security / robustness evaluation
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: application-category
+    attributes:
+      label: Application category
+      options:
+        - Healthcare-relevant sensing
+        - Smart environments
+        - Human activity recognition
+        - Security and privacy
+        - Robotics / interaction
+        - Industrial / IoT sensing
+        - General / background
+        - Future category
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility-level
+    attributes:
+      label: Initial reproducibility impression
+      options:
+        - High
+        - Medium
+        - Low
+        - Not reviewed
+        - Unknown
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Reproducibility notes
+      description: Mention setup clarity, requirements, dataset needs, missing files, or barriers.
+      placeholder: "Optional notes..."
+    validations:
+      required: false
