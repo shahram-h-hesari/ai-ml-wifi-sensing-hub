@@ -23,6 +23,22 @@ The long-term goal is to make the AI/ML WiFi sensing research landscape easier t
 
 ---
 
+## Repository Structure
+
+| Path | Purpose |
+|---|---|
+| [`papers/`](papers/) | Paper review templates and literature organization |
+| [`datasets/`](datasets/) | Dataset review templates, access notes, and dataset tracking |
+| [`code_releases/`](code_releases/) | Code repository review templates and reproducibility notes |
+| [`security_robustness/`](security_robustness/) | Security, privacy, robustness, and adversarial-risk mapping |
+| [`collaboration/`](collaboration/) | Research groups, labs, authors, and collaboration candidates |
+| [`evidence_map/`](evidence_map/) | Structured CSV evidence maps for papers, datasets, code, security gaps, and collaboration leads |
+| [`ROADMAP.md`](ROADMAP.md) | Development roadmap for the hub |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guide for suggesting papers, datasets, code, and collaboration ideas |
+| [`CITATION.cff`](CITATION.cff) | Citation metadata for this repository |
+
+---
+
 ## Research Motivation
 
 WiFi sensing has shown promise for detecting and interpreting human activity, motion, respiration, presence, and environment-level changes without requiring wearable devices or cameras. AI/ML methods are increasingly used to classify patterns, estimate signals, and support higher-level sensing applications from WiFi channel information.
@@ -166,6 +182,34 @@ flowchart TD
 
 ---
 
+## Evidence Map Files
+
+The structured evidence tables are stored in [`evidence_map/`](evidence_map/):
+
+| File | Purpose |
+|---|---|
+| [`papers_index.csv`](evidence_map/papers_index.csv) | Structured paper list |
+| [`datasets_index.csv`](evidence_map/datasets_index.csv) | Dataset access, modality, license, and experiment-suitability tracking |
+| [`code_releases_index.csv`](evidence_map/code_releases_index.csv) | Code availability, setup clarity, and reproducibility notes |
+| [`security_gap_map.csv`](evidence_map/security_gap_map.csv) | Security, privacy, adversarial ML, and robustness evidence |
+| [`collaboration_candidates.csv`](evidence_map/collaboration_candidates.csv) | Authors, labs, dataset owners, and communities connected to the hub |
+
+---
+
+## Review Templates
+
+This repository includes reusable review templates:
+
+| Template | Purpose |
+|---|---|
+| [`papers/paper_review_template.md`](papers/paper_review_template.md) | Review and summarize papers |
+| [`datasets/dataset_review_template.md`](datasets/dataset_review_template.md) | Evaluate datasets and access conditions |
+| [`code_releases/code_release_review_template.md`](code_releases/code_release_review_template.md) | Review code repositories and reproducibility |
+| [`security_robustness/security_mapping_template.md`](security_robustness/security_mapping_template.md) | Map security, privacy, and robustness evidence |
+| [`collaboration/collaboration_candidate_template.md`](collaboration/collaboration_candidate_template.md) | Evaluate authors, labs, groups, and collaboration candidates |
+
+---
+
 ## Intended Audience
 
 This project is designed for researchers and practitioners working across:
@@ -182,6 +226,19 @@ This project is designed for researchers and practitioners working across:
 
 ---
 
+## How to Suggest Resources
+
+Researchers, students, and practitioners can suggest resources through GitHub Issues using the structured forms:
+
+- Suggest a paper
+- Suggest a dataset
+- Suggest a code repository
+- Suggest a collaboration idea or research group
+
+Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for scope, review criteria, and contribution guidance.
+
+---
+
 ## Collaboration Invitation
 
 Suggestions are welcome for:
@@ -195,7 +252,29 @@ Suggestions are welcome for:
 - Research groups or labs working in related areas
 - New application categories for AI/ML WiFi sensing
 
-Future GitHub issue templates will provide a structured way to suggest papers, datasets, code resources, and collaboration ideas.
+GitHub issue templates provide a structured way to suggest papers, datasets, code resources, and collaboration ideas.
+
+---
+
+## Roadmap
+
+See [`ROADMAP.md`](ROADMAP.md) for the current development roadmap.
+
+Near-term priorities include:
+
+1. Add the first healthcare-relevant WiFi sensing papers.
+2. Identify public datasets and code repositories linked to those papers.
+3. Mark dataset/code availability and reproducibility status.
+4. Map security, robustness, and privacy relevance.
+5. Identify research groups or labs connected to high-value papers and datasets.
+
+---
+
+## Citation
+
+If you use or reference this hub, please cite it using the metadata in [`CITATION.cff`](CITATION.cff).
+
+GitHub also provides a **Cite this repository** option in the repository sidebar.
 
 ---
 
