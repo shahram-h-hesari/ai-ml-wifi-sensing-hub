@@ -1,14 +1,13 @@
 # Backbone Evidence Layer
 
-The **Backbone Evidence Layer** identifies the highest-value papers, datasets, code resources, and benchmark materials supporting the **AI/ML WiFi Sensing Hub**.
+The **Backbone Evidence Layer** identifies the highest-value papers, datasets, code resources, benchmark materials, clinical-safety references, and adversarial-attack evidence supporting the **AI/ML WiFi Sensing Hub**.
 
-This layer separates evidence into three complementary groups currently tracked in this folder:
+This layer separates evidence into four complementary groups:
 
 1. **Conceptual Backbone Papers** — proof-of-concept papers that justify the research problem, threat model, security gap, safety framing, or defense theory.
 2. **Reproducibility Backbone Resources** — datasets, code repositories, benchmark papers, and experimental resources that support verification, reproduction, or claim checking.
-3. **Adversarial Impact Backbone** — papers showing that adversarial, perturbation, spoofing, physical-layer, black-box, or transfer attacks degrade WiFi CSI sensing or closely related wireless sensing outputs.
-
-A separate **Clinical-Safety Translation Backbone** can be added later for HR, RR, fall safety, false alarms, missed events, and time-to-alarm references.
+3. **Clinical-Safety Translation Backbone** — clinical and patient-safety references that justify HR, RR, falls, missed events, false alarms, and time-to-alarm as meaningful safety metrics.
+4. **Adversarial Impact Backbone** — papers showing that adversarial, perturbation, spoofing, physical-layer, black-box, or transfer attacks degrade WiFi CSI sensing or closely related wireless sensing outputs.
 
 ---
 
@@ -20,9 +19,10 @@ A professional evidence hub should separate different kinds of value:
 |---|---|---|
 | Conceptual / proof-of-concept value | Does this paper justify the research problem or technical direction? | Physical-layer attack, CSI manipulation, adversarial sensing risk, certified defense theory |
 | Reproducibility value | Can the dataset, code, or benchmark be inspected and reused? | Public dataset, GitHub repository, benchmark library, reproducible baseline |
+| Clinical-safety translation value | Does this reference justify why a technical error matters clinically? | Missed falls, HR/RR error, false alarms, response delay, time-to-alarm |
 | Adversarial-impact value | Does the paper show measurable sensing degradation under attack? | Attack success rate, accuracy drop, regression error, false prediction rate, targeted misclassification |
 
-This structure helps avoid treating all papers equally. Some papers explain **why the research problem matters**. Some provide **datasets or code for experiments**. Others provide **attack-impact evidence** that can be translated into HR, RR, and fall-related clinical-safety metrics.
+This structure helps avoid treating all papers equally. Some papers explain **why the research problem matters**. Some provide **datasets or code for experiments**. Some justify **clinical safety metrics**. Others provide **attack-impact evidence** that can be translated into HR, RR, and fall-related clinical-safety metrics.
 
 ---
 
@@ -89,6 +89,38 @@ The five reproducibility backbone resources serve a different purpose from the c
 **MM-Fi: Multi-Modal Non-Intrusive 4D Human Dataset for Versatile Wireless Sensing** [5] expands the hub beyond traditional CSI-only activity recognition. Because it is multimodal and includes WiFi CSI, it can support future work comparing WiFi sensing with other modalities and richer human-perception labels.
 
 Together, [1]–[5] explain **how the research can become inspectable and useful to others**: SenseFi [1] supports benchmark code, CSI-Bench [2] supports large-scale real-world evaluation, WiAR [3] supports public activity-recognition data, FallDeFi [4] supports healthcare-relevant fall-detection reproducibility, and MM-Fi [5] supports future multimodal WiFi sensing expansion.
+
+---
+
+# C. Clinical-Safety Translation Backbone
+
+The **Clinical-Safety Translation Backbone** will identify clinical and patient-safety references that justify translating technical sensing failures into clinically meaningful metrics.
+
+This category is focused on **HR, RR, fall detection, false alarms, missed events, and time-to-alarm**. It is not intended to prove WiFi sensing or adversarial attack feasibility. Instead, it explains why the output of an AI/ML sensing system should be evaluated in safety terms, not only in machine-learning terms such as accuracy, F1-score, or mean absolute error.
+
+## Planned Clinical-Safety Translation Table
+
+| Rank | Release Year | Reference / Guideline Title | Clinical-Safety Role | Thesis Metric Supported | Link |
+|---|---:|---|---|---|---|
+| 1 | TBD | Fall burden / older-adult fall safety reference | Establishes why missed falls are safety-critical events | Missed falls, fall injury risk, fall mortality | TBD |
+| 2 | TBD | Long-lie / delayed fall rescue reference | Establishes why delayed fall detection and time-on-floor matter | Time-to-alarm delay, delayed rescue, missed fall consequences | TBD |
+| 3 | TBD | HR/RR early warning or deterioration-score reference | Establishes why HR and RR errors matter clinically | HR/RR threshold error, deterioration detection, false vital-sign alerts | TBD |
+| 4 | TBD | Alarm fatigue / false alarm reference | Establishes why false alarms are safety-relevant | False alarms per hour/day, alarm fatigue, response delay | TBD |
+| 5 | TBD | Clinical AI / monitoring evaluation reference | Supports evaluating AI-based monitoring systems with clinical-utility and safety metrics | Clinical utility, workflow impact, safety-oriented evaluation | TBD |
+
+## Clinical-Safety Translation Comparison
+
+This category is still under review. The goal is to identify 5 strong references that justify the thesis’s clinical-safety metrics. The best final set should cover three major safety pathways.
+
+First, the fall-safety references should explain why a missed fall is not simply a classifier false negative. A missed fall can mean delayed rescue, prolonged time on the floor, injury escalation, or increased mortality risk. These references will support metrics such as **missed falls per day** and **time-to-fall alert**.
+
+Second, HR and RR references should justify why vital-sign estimation error is not simply a regression error. If HR or RR estimates cross clinical thresholds incorrectly, the system may generate false deterioration alerts or suppress true deterioration alerts. These references will support metrics such as **HR/RR threshold-crossing error**, **false vital-sign alerts**, and **missed deterioration events**.
+
+Third, alarm-fatigue and clinical-monitoring references should justify why false alarms matter. A false alarm is not only an ML false positive; repeated false alarms can create alarm fatigue, increase caregiver burden, and delay response to true events. These references will support metrics such as **false alarms per hour/day** and **response-delay risk**.
+
+The final clinical-safety translation category should therefore answer this question:
+
+**If an adversarial attack changes a WiFi sensing model output, why does that technical error matter for patient safety?**
 
 ---
 
@@ -197,9 +229,10 @@ The current version contains:
 
 - **5 Conceptual Backbone papers**
 - **5 Reproducibility Backbone resources**
+- **Clinical-Safety Translation Backbone placeholder**
 - **10 Primary Adversarial Impact Backbone papers**
 - **5 Supporting / Secondary Adversarial Evidence papers**
 
 Next planned addition:
 
-- **Clinical-Safety Translation Backbone** for HR, RR, fall safety, false alarms, missed events, and time-to-alarm evidence.
+- Finalize **Clinical-Safety Translation Backbone** for HR, RR, fall safety, false alarms, missed events, and time-to-alarm evidence.
