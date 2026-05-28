@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this research hub, please cite it using the metadata below."
+title: "AI/ML WiFi Sensing Hub"
+type: dataset
+authors:
+  - family-names: "Hatefi Hesari"
+    given-names: "Shahram"
+    affiliation: "Portland State University"
+repository-code: "https://github.com/shahram-h-hesari/ai-ml-wifi-sensing-hub"
+abstract: "An open research hub mapping AI/ML WiFi sensing papers, datasets, code, reproducibility, security gaps, and application categories, starting with healthcare-relevant sensing."
+keywords:
+  - AI/ML WiFi sensing
+  - WiFi CSI
+  - healthcare-relevant sensing
+  - wireless sensing
+  - reproducible research
+  - adversarial robustness
+  - security and privacy
+  - signal processing
+license: "NOASSERTION"
+date-released: "2026-05-28"
